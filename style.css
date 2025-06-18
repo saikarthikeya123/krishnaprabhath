@@ -20,10 +20,10 @@ body {
     padding-top: 40px;
 }
 
-.container {
+.custom-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
 }
 
 /* Header Styles */
@@ -180,19 +180,10 @@ section {
     box-shadow: 0 8px 32px rgba(255,107,107,0.12);
 }
 
-h2 {
-    color: var(--primary-color);
-    font-size: 2.2rem;
-    margin-bottom: 1.2rem;
-    font-weight: 600;
-}
-
-h3 {
-    color: var(--secondary-color);
-    font-size: 1.3rem;
-    margin-bottom: 0.7rem;
-    font-weight: 500;
-}
+h1 { color: #1e3a5c !important; }
+h2 { color: #4ecdc4 !important; }
+h3 { color: #ff9800 !important; }
+h4 { color: #7b8794 !important; }
 
 /* Button Improvements */
 .cta-button, .submit-btn {
@@ -288,12 +279,12 @@ h3 {
 }
 
 /* About Section */
-.about-section {
+.custom-about-section {
     padding: 5rem 0;
     background-color: var(--light-color);
 }
 
-.about-content {
+.custom-about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -312,11 +303,11 @@ h3 {
 }
 
 /* Krishna Section */
-.krishna-section {
+.custom-krishna-section {
     padding: 5rem 0;
 }
 
-.krishna-content {
+.custom-krishna-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
@@ -523,9 +514,34 @@ h3 {
 }
 
 .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 18px 0 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    margin-top: 18px;
+}
+.footer-bottom p {
+    margin: 0 0 6px 0;
+    font-size: 1.08rem;
+    color: #fff;
+    font-weight: 500;
+}
+.footer-bottom .footer-contact-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+.footer-bottom a {
+    transition: color 0.2s, transform 0.2s;
+}
+.footer-bottom a:hover {
+    color: #ff9800 !important;
+    transform: scale(1.15);
 }
 
 /* Animations */
@@ -576,8 +592,8 @@ h3 {
         margin: 0.5rem 0;
     }
 
-    .about-content,
-    .krishna-content,
+    .custom-about-content,
+    .custom-krishna-content,
     .contact-content {
         grid-template-columns: 1fr;
     }
@@ -592,4 +608,75 @@ h3 {
     .hero-content h1 {
         font-size: 2.5rem;
     }
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.5rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.2s;
+}
+.whatsapp-float:hover {
+    background: #128c7e;
+    color: #fff;
+    transform: scale(1.08);
+}
+
+/* Footer Action Buttons */
+.footer-action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-size: 1.08rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 0;
+}
+.footer-action-btn i {
+    font-size: 1.3rem;
+}
+.whatsapp-btn {
+    background: #25d366;
+    color: #fff;
+    border: none;
+}
+.whatsapp-btn:hover {
+    background: #128c7e;
+    color: #fff;
+}
+.instagram-btn {
+    background: #fff;
+    color: #e1306c;
+    border: 2px solid #e1306c;
+}
+.instagram-btn:hover {
+    background: #e1306c;
+    color: #fff;
+}
+
+.carousel-img-fixed {
+    height: 450px;
+    width: 90%;
+    max-width: none;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 } 
