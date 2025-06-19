@@ -1,45 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhadradri Kshetra Dharshini - Lord Rama's Divine Abode</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Bhadradri Kshetra Dharshini</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div style="width:100%;background:#ff9800;color:#fff;font-weight:600;padding:6px 0;text-align:center;font-family:'Poppins',sans-serif;letter-spacing:0.5px;">
-        <marquee behavior="scroll" direction="left" scrollamount="6">Please fill the Contact Us section so that we can get your details and assist you better!</marquee>
+    <div class="top-info-bar">
+        <marquee behavior="scroll" direction="right" scrollamount="9">
+            Please fill the Contact Us section so that we can get your details and assist you better! Switch to desktop view for better experience.
+        </marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="12">Designed by Birru Karthikeya</marquee>
     </div>
-    <!-- Header Section -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <h1 style="color:#ff9800;">Welcome to Bhadradri Kshetra Dharshini </h1>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-om"></i> Bhadradri Kshetra Dharshini</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About Bhadrachalam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vip-dharshan"><i class="fas fa-crown"></i> VIP Dharshan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#special-poojas"><i class="fas fa-praying-hands"></i> Poojas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#krishna"><i class="fas fa-user"></i> About Krishna Prabhath</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#explore"><i class="fas fa-compass"></i> Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Bhadrachalam</a></li>
-                <li><a href="#darshan">VIP Darshan</a></li>
-                <li><a href="#poojas">Poojas</a></li>
-                <li><a href="#explore">Explore</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
+        </div>
+    </nav>
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 style="color:#ff9800;">Welcome to Bhadradri Kshetra Dharshini <span style='color:#4ecdc4;'>by Krishna Prabhath</span></h1>
+            <h1>Welcome to Bhadradri Kshetra Dharshini</h1>
+            <h4>by Krishna Prabhath</h4>
             <p>Experience the divine presence of Lord Rama</p>
             <a href="#contact" class="cta-button">Book Your Visit</a>
         </div>
     </section>
-
-    <!-- About Bhadrachalam Section -->
+    <section id="main-carousel">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" style="padding: 3%;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="c1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="c6.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </section>
     <section id="about" class="custom-about-section">
         <div class="custom-container">
             <h2>About Bhadrachalam</h2>
@@ -49,7 +101,7 @@
                     <p>The temple is situated on the banks of the holy Godavari River, creating a serene and divine atmosphere for spiritual seekers. Bhadrachalam is also known for its grand celebrations during Sri Rama Navami, Vaikunta Ekadasi, and other festivals. The town is a gateway to spiritual exploration and cultural heritage, with legends dating back to the Ramayana era.</p>
                     <p>Nearby attractions include the scenic Papikondalu hills, the historic Parnashala (believed to be the place where Lord Rama spent part of his exile), and the tranquil Godavari river cruises. Bhadrachalam is not just a pilgrimage center but a destination for peace, devotion, and natural beauty.</p>
                 </div>
-                <div id="carouselExample" class="carousel slide">
+                <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="1.jpg" class="d-block w-100" alt="...">
@@ -61,11 +113,11 @@
                         <img src="3.jpg" class="d-block w-100" alt="...">
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                     </button>
@@ -73,313 +125,290 @@
             </div>
         </div>
     </section>
-
-    <!-- Krishna Prabhath Section -->
     <section id="krishna" class="custom-krishna-section">
         <div class="custom-container">
-            <h2>Meet Krishna Prabhath – Owner & Your Trusted Guide</h2>
+            <h2>👤 About Ramavajjala Krishnaprabhath Sharma</h2>
             <div class="custom-krishna-content">
-                <div class="krishna-image">
-                    <img src="krishna-prabhath.jpg" alt="Krishna Prabhath Sharma" style="height: 340px; width: auto; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+                <div class="krishna-image-group">
+                    <div class="krishna-image">
+                        <img src="krishna1.jpg" alt="Ramavajjala Krishna Prabhath Sharma" />
+                    </div>
+                    <div class="krishna-image">
+                        <img src="krishna2.jpg" alt="Ramavajjala Krishna Prabhath Sharma - Second Photo" />
+                    </div>
                 </div>
                 <div class="krishna-text">
-                    <h3>Ramavajjala Krishna Prabhath Sharma</h3>
-                    <p>Pandith Sree Ram Archaka Brahma Purohith Sangam</p>
-                    <p>Sri Gauthami Brahaman Sagam, Bhadrachalam</p>
-                    <p><strong>Krishna Prabhath is the owner and dedicated guide for all tourists visiting Bhadrachalam through this website.</strong> With a deep passion for sharing the spiritual and cultural heritage of Bhadrachalam, he personally assists visitors in exploring the temple, nearby attractions, and participating in special poojas and events.</p>
-                    <p>Whether you are a devotee seeking a divine experience, a family planning a pilgrimage, or a couple wishing to get married at the holy temple, Krishna Prabhath ensures a smooth, memorable, and authentic journey. He offers personalized guidance, arranges VIP darshan, organizes poojas, and provides insights into the history and significance of each site.</p>
-                    <p><strong>Special Note:</strong> Krishna garu conducts marriages not only in the sacred temples of Bhadrachalam but also at beautiful outdoor locations, making your special day truly unique and memorable. He takes care of all rituals and arrangements, ensuring a blessed and hassle-free ceremony for couples and families.</p>
-                    <p>Contact Krishna Prabhath for a truly enriching and hassle-free visit to Bhadrachalam. Your spiritual journey and comfort are his top priorities!</p>
+                    <p><strong>Pandit Sree Ram Archaka | Member – Brahma Purohit Sangam | Sri Gautami Brahman Sangam, Bhadrachalam<br>Owner &amp; Your Trusted Spiritual Guide</strong></p>
+                    <p>Ramavajjala Krishna Prabhath Sharma garu is a respected Hindu priest, temple guide, and the founder of this spiritual service platform dedicated to assisting tourists and devotees visiting Bhadrachalam, the divine abode of Lord Sree Rama. As a devoted member of the Brahma Purohit Sangam and Sri Gautami Brahman Sangam, he blends traditional Vedic knowledge with a warm personal approach to serve all who seek spiritual support.</p>
+                    <p>With a deep passion for preserving and sharing the spiritual and cultural heritage of Bhadrachalam, Krishna garu ensures every devotee's journey is smooth, memorable, and spiritually fulfilling.</p>
+                    <h4>🙏 Services Offered by Krishna Prabhath Sharma Garu:</h4>
+                    <ul>
+                        <li>VIP Darshan arrangements at Bhadrachalam Sree Sitaramachandra Swamy Temple</li>
+                        <li>Conducting all types of poojas and Vedic rituals with authenticity</li>
+                        <li>Room booking assistance for tourists and families</li>
+                        <li>Performing traditional marriages (Kalyanams) in temples or open sacred spaces</li>
+                        <li>Carrying out Pinda Pradanam and Shraddha karmas at the holy River Godavari</li>
+                        <li>Providing insights into temple history, local traditions, and sacred spots</li>
+                    </ul>
+                    <p>Whether you're:</p>
+                    <ul>
+                        <li>A devotee seeking divine blessings,</li>
+                        <li>A family on pilgrimage,</li>
+                        <li>A couple planning a sacred marriage, or</li>
+                        <li>Performing sacred last rites for your ancestors...</li>
+                    </ul>
+                    <p>Krishna garu offers personalized guidance and complete support rooted in tradition and care.</p>
+                    <p><strong>✨ Special Note:</strong><br>
+                    He also conducts marriages at outdoor scenic locations, ensuring a divine, memorable, and hassle-free wedding experience, with all rituals and arrangements taken care of.</p>
+                    <p><strong>📞 Contact Krishna Prabhath Sharma for a spiritually enriching and worry-free visit to Bhadrachalam.<br>Your devotion, comfort, and faith are his top priorities.</strong></p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Temple Events & Marriages Section -->
-    <section class="events-section">
-        <div class="container">
-            <h2>Temple Events & Marriages</h2>
-            <div class="events-list">
-                <div class="event-card">
-                    <h3>Grand Sri Rama Kalyanam</h3>
-                    <p>Participate in the divine wedding ceremony of Lord Rama and Sita Devi, held annually with grandeur and devotion. Special arrangements for devotees and couples wishing to perform marriages at the temple.</p>
-                </div>
-                <div class="event-card">
-                    <h3>Special Poojas & Sevas</h3>
-                    <p>Book special poojas, sevas, and archana for your family. Experience the spiritual energy of Bhadrachalam with personalized rituals guided by expert priests.</p>
-                </div>
-                <div class="event-card">
-                    <h3>Festival Celebrations</h3>
-                    <p>Join the vibrant celebrations during Sri Rama Navami, Vaikunta Ekadasi, and other major festivals. Enjoy cultural programs, processions, and spiritual discourses.</p>
-                </div>
-                <div class="event-card">
-                    <h3>Marriage Arrangements</h3>
-                    <p>Plan your wedding at the holy temple with complete arrangements, including rituals, decorations, and accommodation for guests. Contact Krishna Prabhath Sharma for seamless organization.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- VIP Darshan Section -->
-    <section id="darshan" class="darshan-section">
-        <div class="container">
-            <h2>VIP Darshan</h2>
-            <div class="darshan-content">
-                <p>Experience the divine presence of Lord Rama through our special VIP Darshan program. Book your slot in advance for a peaceful and meaningful darshan.</p>
-                <div class="darshan-features">
-                    <div class="feature">
-                        <i class="fas fa-clock"></i>
-                        <h3>Special Timings</h3>
-                        <p>Early morning and evening slots available</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-pray"></i>
-                        <h3>Personal Guidance</h3>
-                        <p>Expert guidance from temple priests</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-star"></i>
-                        <h3>Premium Experience</h3>
-                        <p>Comfortable and peaceful darshan</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Poojas Section -->
-    <section id="poojas" class="poojas-section">
-        <div class="container">
-            <h2>Special Poojas</h2>
-            <div class="pooja-grid">
-                <div class="pooja-card">
-                    <h3>Rama Navami</h3>
-                    <p>Celebrate the birth of Lord Rama</p>
-                </div>
-                <div class="pooja-card">
-                    <h3>Vaikunta Ekadasi</h3>
-                    <p>Special darshan and poojas</p>
-                </div>
-                <div class="pooja-card">
-                    <h3>Kalyanam</h3>
-                    <p>Divine marriage ceremony</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Explore Section -->
-    <section id="explore" class="explore-section">
-        <div class="container">
-            <h2>Explore Nearby Places</h2>
-            <div class="explore-grid">
-                <div class="explore-card">
-                    <img src="images/papikondalu.jpg" alt="Papikondalu">
-                    <h3>Papikondalu</h3>
-                    <p>Papikondalu, also known as the Papi Hills, are a breathtaking range of hills along the Godavari River. Tourists can enjoy scenic boat rides, lush green landscapes, and tranquil river views. Visiting Papikondalu offers a perfect escape into nature, with opportunities for photography, relaxation, and experiencing the serene beauty of the Eastern Ghats. It's a must-visit for nature lovers and adventure seekers.</p>
-                </div>
-                <div class="explore-card">
-                    <img src="images/parnashala.jpg" alt="Parnashala">
-                    <h3>Parnashala</h3>
-                    <p>Parnashala is a historic and spiritual site believed to be the place where Lord Rama, Sita, and Lakshmana spent part of their exile. Tourists can explore ancient legends, visit the beautifully maintained site, and experience the peaceful atmosphere. Parnashala is ideal for those interested in mythology, history, and seeking a deeper spiritual connection during their visit to Bhadrachalam.</p>
-                </div>
-            </div>
-            <div class="explore-tips">
-                <h4>Why Visit These Places?</h4>
-                <ul>
-                    <li>Experience the natural beauty and tranquility of the Godavari region.</li>
-                    <li>Learn about the rich mythology and history associated with Lord Rama.</li>
-                    <li>Enjoy boat rides, local cuisine, and cultural experiences unique to Telangana.</li>
-                    <li>Perfect for families, spiritual seekers, and adventure lovers alike.</li>
+    <section id="special-poojas" class="custom-pooja-section">
+        <div class="custom-container">
+            <h2><i class="fas fa-praying-hands"></i> Special Poojas by Krishna Garu</h2>
+            <div class="custom-pooja-content">
+                <h4>🌟 Common Home & Outdoor Poojas:</h4>
+                <ul class="pooja-list">
+                    <li><i class="fas fa-ring"></i> <strong>Kalyanam (Traditional Marriage Ceremony)</strong><br><span>Performing traditional marriages (Kalyanams) in temples or open sacred spaces, with all rituals and arrangements taken care of for a divine and memorable wedding experience.</span></li>
+                    <li><i class="fas fa-car"></i> <strong>Vahana Pooja & Vehicle Blessings</strong><br><span>Blessing and purification rituals for new vehicles to ensure safety and divine protection.</span></li>
+                    <li><i class="fas fa-hands-helping"></i> <strong>Pinda Pradanam & Pitru Shraddha Karma</strong><br><span>Vedic rites performed for ancestors on the banks of the Godavari, ensuring peace and blessings for departed souls.</span></li>
+                    <li><i class="fas fa-fire"></i> <strong>Sudarsana Homam / Navagraha Homam / Ayush Homam</strong><br><span>Powerful fire rituals for health, planetary peace, and longevity, performed with Vedic precision.</span></li>
+                    <li><i class="fas fa-book"></i> <strong>Satyanarayana Swamy Vratam</strong><br><span>Performed on full moon days or special occasions to seek blessings for health, wealth, and family well-being.</span></li>
+                    <li><i class="fas fa-coins"></i> <strong>Lakshmi Devi Vratam / Vara Lakshmi Vratam</strong><br><span>A powerful pooja to invoke Goddess Lakshmi's blessings for prosperity and harmony in the household.</span></li>
+                    <li><i class="fas fa-om"></i> <strong>Ganapathi Homam / Ganapathi Pooja</strong><br><span>For removing obstacles and starting new ventures, like housewarming or business openings.</span></li>
+                    <li><i class="fas fa-sun"></i> <strong>Navagraha Shanti Pooja</strong><br><span>To pacify the nine planetary deities and ensure balance in life, especially during doshas or transitions.</span></li>
+                    <li><i class="fas fa-home"></i> <strong>Gruha Pravesham (Housewarming Ceremony)</strong><br><span>Conducted while entering a new house to purify the space and invite divine energies.</span></li>
+                    <li><i class="fas fa-feather-alt"></i> <strong>Saraswati Pooja / Vidya Arambham</strong><br><span>Especially for children and students seeking blessings for education and wisdom.</span></li>
+                    <li><i class="fas fa-baby"></i> <strong>Annaprasana (First Feeding Ceremony)</strong><br><span>Performed when a baby is fed solid food for the first time.</span></li>
+                    <li><i class="fas fa-birthday-cake"></i> <strong>Ayushya Homam / Birthday Pooja</strong><br><span>A longevity pooja to bless individuals on their birthdays or after recovery from illness.</span></li>
+                    <li><i class="fas fa-baby-carriage"></i> <strong>Seemantham / Baby Shower Rituals</strong><br><span>Vedic ceremony performed for pregnant women to bless the mother and unborn child.</span></li>
+                    <li><i class="fas fa-ribbon"></i> <strong>Upanayanam (Thread Ceremony)</strong><br><span>Sacred thread ceremony for young boys, marking the beginning of Vedic education.</span></li>
+                    <li><i class="fas fa-hands"></i> <strong>Sankatahara Chaturthi Pooja</strong><br><span>Dedicated to Lord Ganesha, for removal of hurdles and challenges in life.</span></li>
+                    <li><i class="fas fa-moon"></i> <strong>Rahu-Ketu Shanti / Chandi Homam</strong><br><span>For relief from doshas and evil planetary influences.</span></li>
                 </ul>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section" style="background: #fffbe7; border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); margin: 3rem 0;">
-        <div class="container">
-            <h2 style="color:#ff9800;">Contact Us</h2>
-            <div class="contact-content" style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: flex-start;">
-                <div class="contact-form" style="flex:1; min-width:270px; background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.06); padding:2rem;">
-                    <form id="contactForm" action="https://formsubmit.co/saikrishnaprabhath@gmail.com" method="POST">
-                        <input type="hidden" name="_next" value="thankyou.html">
-                        <input type="hidden" name="_autoresponse" value="Thank you for choosing us! We will get back to you shortly.">
-                        <input type="hidden" id="ist_time" name="Time (IST)">
+    <section id="vip-dharshan" class="custom-vip-section">
+        <div class="custom-container">
+            <h2 class="vip-title"><i class="fas fa-crown"></i> VIP Darshan</h2>
+            <p class="vip-desc">Experience the divine presence of Lord Rama through our special VIP Darshan program. Book your slot in advance for a peaceful and meaningful darshan.</p>
+            <div class="vip-cards">
+                <div class="vip-card">
+                    <div class="vip-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Special Timings</h3>
+                    <p>Early morning and evening slots available</p>
+                </div>
+                <div class="vip-card">
+                    <div class="vip-icon"><i class="fas fa-user-friends"></i></div>
+                    <h3>Personal Guidance</h3>
+                    <p>Expert guidance from temple priests</p>
+                </div>
+                <div class="vip-card">
+                    <div class="vip-icon"><i class="fas fa-star"></i></div>
+                    <h3>Premium Experience</h3>
+                    <p>Comfortable and peaceful darshan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="explore" class="custom-explore-section">
+        <div class="custom-container">
+            <h2><i class="fas fa-map-marked-alt"></i> Explore Around Bhadrachalam</h2>
+            <div class="explore-list">
+                <div class="explore-item">
+                    <h4>1. Parnasala – 17 km from Bhadrachalam</h4>
+                    <p>A highly revered spot believed to be the place where Lord Rama, Sita, and Lakshmana stayed during their exile. You can see replicas of their hut and footprints, and the scenic Godavari river flowing nearby.</p>
+                </div>
+                <div class="explore-item">
+                    <h4>2. Abhaya Anjaneya Swamy Temple – on the way to Parnasala</h4>
+                    <p>A peaceful temple dedicated to Lord Hanuman, protector and devotee of Lord Rama. Devotees often stop here on the way to Parnasala.</p>
+                </div>
+                <div class="explore-item">
+                    <h4>3. Jattayu Paaka (Yetapaka) – 2 km from Bhadrachalam</h4>
+                    <p>Said to be the place where Jatayu, the divine bird, fought Ravana while he was abducting Sita Devi. A spiritually significant stop for Ramayana followers.</p>
+                </div>
+                <div class="explore-item">
+                    <h4>4. Gundala Hot Springs – 5 km from Bhadrachalam</h4>
+                    <p>Natural hot water springs surrounded by forest and nature. The water is believed to have healing properties, and it's a peaceful spot for a short visit.</p>
+                </div>
+                <div class="explore-item">
+                    <h4>5. Godavari Harathi Ghat – near Bhadrachalam Temple</h4>
+                    <p>In the evenings, a spiritual Harathi (aarti) is offered to the sacred River Godavari, similar to Ganga Aarti in Varanasi. A beautiful sight to experience.</p>
+                </div>
+                <div class="explore-item">
+                    <h4>6. Koonavaram – Around 35 km from Bhadrachalam</h4>
+                    <p>Located where the Sabari River meets Godavari, this is believed to be the place where Shabari offered fruits to Lord Rama. It's an important spot for pilgrims.</p>
+                </div>
+                <div class="explore-item">
+                    <h4>7. Dummugudem Barrage – 20+ km from Bhadrachalam</h4>
+                    <p>A scenic spot on the Godavari River, perfect for photography and relaxation. Popular with nature lovers and families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="custom-contact-section">
+        <div class="custom-container">
+            <h2 class="contact-main-heading"><i class="fas fa-envelope"></i> Contact Us</h2>
+            <div class="contact-content contact-flex">
+                <!-- Left Column - Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form" action="mailto:saikrishnaprabhath@gmail.com" method="POST" enctype="text/plain">
                         <div class="form-group">
-                            <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="Phone" placeholder="Your Phone" required>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="Message" placeholder="Your Message" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
                         </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
+                        <button type="submit" class="cta-button">Send Message</button>
                     </form>
                 </div>
-                <div class="contact-info" style="flex:1; min-width:270px; background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.06); padding:2rem;">
-                    <h3 style="color:#4ecdc4;">Get in Touch</h3>
-                    <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px;">
-                        <div style="display: flex; align-items: center; gap: 8px; color: #ff6b6b; font-size: 1.1rem;">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Bhadrachalam, Telangana</span>
+                
+                <!-- Right Column - Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-info-block">
+                        <div class="contact-detail">
+                            <a href="https://www.google.com/maps/place/Bhadrachalam,+Telangana" class="contact-icon" target="_blank" title="View on Google Maps">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                            <p>Bhadrachalam, Telangana</p>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 8px; color: #ff6b6b; font-size: 1.1rem;">
-                            <a href="tel:+9196766666750" style="color: #ff6b6b; text-decoration: none;"><i class="fas fa-phone"></i></a>
-                            <span>+91 9676666750</span>
+                        <div class="contact-detail">
+                            <a href="tel:+919676666750" class="contact-icon" title="Call">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <p>+91 9676666750</p>
                         </div>
-                        <div style="display: flex; align-items: center; gap: 8px; color: #ff6b6b; font-size: 1.1rem;">
-                            <a href="mailto:saikrishnaprabhath@gmail.com" style="color: #ff6b6b; text-decoration: none;"><i class="fas fa-envelope"></i></a>
-                            <span>saikrishnaprabhath@gmail.com</span>
+                        <div class="contact-detail">
+                            <a href="mailto:saikrishnaprabhath@gmail.com" class="contact-icon" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <p>saikrishnaprabhath@gmail.com</p>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 16px; margin-top: 10px;">
-                        <a href="https://wa.me/919676666750" target="_blank" class="footer-action-btn whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
-                        <a href="https://www.instagram.com/_karthikeya_06/" target="_blank" class="footer-action-btn instagram-btn">
-                            <i class="fab fa-instagram"></i> Follow on Instagram
-                        </a>
+                    <div class="contact-socials">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="https://wa.me/919676666750?text=Namaste%2C%20I%20am%20interested%20in%20visiting%20Bhadrachalam%20and%20would%20like%20to%20know%20more%20about%20your%20services." class="contact-icon whatsapp" target="_blank" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.instagram.com/krishnaprabhath8542/" class="contact-icon instagram" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/1AaTLKoA6w/?mibextid=qi2Omg" class="contact-icon facebook" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Add more content for tourists -->
-    <section class="tips-section">
-        <div class="container">
-            <h2>Travel Tips & Testimonials</h2>
-            <div class="tips-content">
-                <ul>
-                    <li>Plan your visit during major festivals for a vibrant spiritual experience.</li>
-                    <li>Contact Krishna Prabhath in advance for VIP darshan and pooja bookings.</li>
-                    <li>Explore local cuisine and markets for authentic Telangana flavors.</li>
-                    <li>Respect temple customs and dress modestly during your visit.</li>
+    <section id="tips-testimonials" class="custom-tips-section">
+        <div class="custom-container">
+            <h2 class="tips-heading"><span role="img" aria-label="temple">🛕</span> Travel Tips & Testimonials</h2>
+            <div class="tips-block">
+                <h3 class="tips-subheading">✨ Travel Tips</h3>
+                <ul class="tips-list">
+                    <li><strong>Plan Ahead:</strong> Visit during major festivals for a vibrant spiritual experience.</li>
+                    <li><strong>VIP Darshan & Poojas:</strong> Contact Krishna Prabhath in advance for special bookings.</li>
+                    <li><strong>Local Flavor:</strong> Explore Telangana's authentic cuisine and local markets.</li>
+                    <li><strong>Respect Traditions:</strong> Dress modestly and follow temple customs for a smooth experience.</li>
                 </ul>
-                <blockquote>"Our family trip to Bhadrachalam was unforgettable, thanks to Krishna garu's guidance and arrangements!" – Sumanth, Hyderabad</blockquote>
-                <blockquote>"The marriage ceremony conducted by Krishna Prabhath was beautiful and spiritual. Highly recommended!" – Priya & Arjun</blockquote>
             </div>
-            <div class="cta-extra" style="display: flex; justify-content: center; margin-top: 2rem;">
-                <a href="#contact" class="cta-button">Plan Your Divine Journey Now</a>
+            <div class="testimonials">
+                <h3 class="tips-subheading">💬 Testimonials</h3>
+                <blockquote>"Our family trip to Bhadrachalam was unforgettable, thanks to Krishna garu's guidance and arrangements!"<br><span>— Sumanth, Hyderabad</span></blockquote>
+                <blockquote>"The marriage ceremony conducted by Krishna Prabhath was beautiful and spiritual. Highly recommended!"<br><span>— Priya & Arjun</span></blockquote>
             </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="why-choose-section">
-        <div class="container">
-            <h2>Why Choose Krishna Prabhath as Your Guide?</h2>
-            <div class="why-choose-content" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
-                <div style="flex:1; min-width:220px;">
-                    <h4>Personalized Pilgrimage</h4>
-                    <p>Every tour is tailored to your spiritual needs, whether you seek a peaceful darshan, a grand pooja, or a memorable marriage ceremony.</p>
-                </div>
-                <div style="flex:1; min-width:220px;">
-                    <h4>Local Expertise</h4>
-                    <p>Benefit from Krishna garu's deep knowledge of Bhadrachalam's history, traditions, and hidden gems.</p>
-                </div>
-                <div style="flex:1; min-width:220px;">
-                    <h4>Complete Arrangements</h4>
-                    <p>From accommodation to rituals, every detail is managed for a stress-free and divine experience.</p>
-                </div>
-                <div style="flex:1; min-width:220px;">
-                    <h4>Trusted by Families</h4>
-                    <p>Hundreds of families and couples have cherished their journeys and ceremonies with Krishna Prabhath's guidance.</p>
-                </div>
+            <div class="why-choose-block">
+                <h3 class="why-choose-title">🌟 Why Choose Krishna Prabhath as Your Guide?</h3>
+                <ul class="why-choose-list">
+                    <li><span class="icon">🙏</span> <strong>Personalized Pilgrimage</strong><br>Every tour is designed based on your spiritual goals — be it a peaceful darshan, a vibrant pooja, or a traditional marriage ceremony.</li>
+                    <li><span class="icon">📍</span> <strong>Local Expertise</strong><br>Leverage Krishna garu's in-depth knowledge of Bhadrachalam's history, temple customs, and hidden gems.</li>
+                    <li><span class="icon">🛏️</span> <strong>Complete Arrangements</strong><br>From accommodation and transportation to rituals and temple bookings, everything is taken care of for you.</li>
+                    <li><span class="icon">👨‍👩‍👧‍👦</span> <strong>Trusted by Families</strong><br>Hundreds of families and couples have entrusted their divine journeys to Krishna Prabhath — and cherish every moment.</li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
             <div class="faq-list">
+                <h3 class="faq-title">❓ Frequently Asked Questions</h3>
                 <div class="faq-item">
-                    <h4>How do I book a VIP darshan or pooja?</h4>
-                    <p>Simply use the contact form or WhatsApp link on this website to reach Krishna Prabhath and reserve your slot in advance.</p>
+                    <strong>Q: How do I book a VIP darshan or pooja?</strong>
+                    <p>A: Simply use the contact form or WhatsApp link on this website to connect with Krishna Prabhath and confirm your reservation.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>Can I get married at Bhadrachalam or at another location?</h4>
-                    <p>Yes! Krishna garu conducts marriages both in the temple and at beautiful outdoor venues, handling all rituals and arrangements.</p>
+                    <strong>Q: Can I get married at Bhadrachalam or elsewhere?</strong>
+                    <p>A: Yes! Krishna garu conducts marriages at the temple and also at scenic outdoor locations, taking care of all rituals and arrangements.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>Is guidance available in English and Telugu?</h4>
-                    <p>Yes, Krishna Prabhath can guide you in both English and Telugu for a comfortable experience.</p>
+                    <strong>Q: Is guidance available in both English and Telugu?</strong>
+                    <p>A: Absolutely! Krishna Prabhath is fluent in both languages for your convenience.</p>
                 </div>
                 <div class="faq-item">
-                    <h4>What should I bring for my visit?</h4>
-                    <p>Carry your ID, comfortable clothing, and a heart open to spiritual experiences! For poojas or marriages, Krishna garu will guide you on any special requirements.</p>
+                    <strong>Q: What should I bring for my visit?</strong>
+                    <p>A: Carry a valid ID, modest clothing, and an open heart. Krishna garu will guide you if any pooja or marriage-specific items are needed.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+    <footer class="site-footer">
+        <div class="custom-container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3 style="color:#ff9800;">Bhadradri Kshetra Dharshini</h3>
-                    <p>Experience the divine presence of Lord Rama in Bhadrachalam</p>
+                <div class="footer-brand">
+                    <i class="fas fa-om"></i> Bhadradri Kshetra Dharshini
                 </div>
-                <div class="footer-section">
-                    <h3 style="color:#4ecdc4;">Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#darshan">VIP Darshan</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="footer-nav">
+                    <a href="#about">About</a>
+                    <a href="#vip-dharshan">VIP Darshan</a>
+                    <a href="#special-poojas">Poojas</a>
+                    <a href="#krishna">Krishna Prabhath</a>
+                    <a href="#explore">Explore</a>
+                    <a href="#contact">Contact</a>
                 </div>
-                <div class="footer-section">
-                    <h3 style="color:#4ecdc4;">Contact Info</h3>
-                    <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px;">
-                        <div style="display: flex; align-items: center; gap: 8px; color: #ff6b6b; font-size: 1.1rem;">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Bhadrachalam, Telangana</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px; color: #ff6b6b; font-size: 1.1rem;">
-                            <a href="tel:+9196766666750" style="color: #ff6b6b; text-decoration: none;"><i class="fas fa-phone"></i></a>
-                            <span>+91 9676666750</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px; color: #ff6b6b; font-size: 1.1rem;">
-                            <a href="mailto:saikrishnaprabhath@gmail.com" style="color: #ff6b6b; text-decoration: none;"><i class="fas fa-envelope"></i></a>
-                            <span>saikrishnaprabhath@gmail.com</span>
-                        </div>
-                    </div>
-                    <div style="display: flex; gap: 16px; margin-top: 10px;">
-                        <a href="https://wa.me/919676666750" target="_blank" class="footer-action-btn whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                        </a>
-                        <a href="https://www.instagram.com/_karthikeya_06/" target="_blank" class="footer-action-btn instagram-btn">
-                            <i class="fab fa-instagram"></i> Follow on Instagram
-                        </a>
-                    </div>
+                <div class="footer-copyright">
+                    © 2025 Bhadradri Kshetra Dharshini. All rights reserved.
                 </div>
-        </div>
-        <div class="footer-bottom">
-            <p>Designed with <span style="color:#ff6b6b;">❤️</span> for Krishna garu by <strong>Birru Karthikeya</strong></p>
-            <div>
-                <div style="display: flex; gap: 14px; margin-top: 2px; justify-content: center;">
-                    <p>Contact</p>
-                    <a href="https://wa.me/9392483683" target="_blank" title="WhatsApp" style="color:#25d366; font-size:1.5rem;"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/_karthikeya_06/" target="_blank" title="Instagram" style="color:#e1306c; font-size:1.5rem;"><i class="fab fa-instagram"></i></a>
+                <div class="footer-designer">
+                    Designed with <span class="heart">❤️</span> for Krishna garu by Birru Karthikeya
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/9392483683" class="social-link">
+                        <i class="fab fa-whatsapp"></i> 9392483683
+                    </a>
+                    <a href="https://www.instagram.com/_karthikeya_06/" class="social-link">
+                        <i class="fab fa-instagram"></i> @_karthikeya_06
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <!-- Floating WhatsApp Button -->
-    <!-- <a href="https://wa.me/919676666750" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize carousels
+            [].slice.call(document.querySelectorAll('.carousel')).forEach(function(carousel) {
+                new bootstrap.Carousel(carousel, {
+                    interval: carousel.id === 'carouselExample' ? 2000 : 2500
+                });
+            });
+        });
+    </script>
 </body>
-</html> 
+
+</html>
