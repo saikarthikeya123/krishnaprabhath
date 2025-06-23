@@ -339,8 +339,11 @@
                 <!-- Left Column - Contact Form -->
                 <div class="contact-form-wrapper">
                     <h3>Send us a Message</h3>
-                    <form class="contact-form" action="mailto:saikrishnaprabhath@gmail.com" method="POST"
-                        enctype="text/plain">
+                    <form class="contact-form" action="https://formsubmit.co/saikrishnaprabhath@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Bhadradri Kshetra Dharshini">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_next" value="thankyou.html">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required placeholder="Your Name">
@@ -355,8 +358,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" required
-                                placeholder="Your Message"></textarea>
+                            <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
                         </div>
                         <button type="submit" class="cta-button">Send Message</button>
                     </form>
@@ -378,6 +380,12 @@
                                 <i class="fas fa-phone-alt"></i>
                             </a>
                             <p>+91 9676666750</p>
+                        </div>
+                        <div class="contact-detail">
+                            <a href="tel:+918886965858" class="contact-icon" title="Alternative Contact">
+                                <i class="fas fa-phone-alt"></i>
+                            </a>
+                            <p>+91 8886965858</p>
                         </div>
                         <div class="contact-detail">
                             <a href="mailto:saikrishnaprabhath@gmail.com" class="contact-icon" title="Email">
